@@ -126,12 +126,12 @@ input.form-control {
 }
 
 .navbar-nav .nav-link {
-    color: var(--navy);
+    color: var(--navy); /* Warna default */
 }
 
 .navbar-nav .nav-item .active {
-    color: var(--blue);
-    font-weight: var(--fwbold);
+    color: var(--blue); /* Warna untuk link aktif */
+    font-weight: var(--fwbold); /* Font tebal untuk link aktif */
 }
 
 .header .stats .item:nth-child(2) {

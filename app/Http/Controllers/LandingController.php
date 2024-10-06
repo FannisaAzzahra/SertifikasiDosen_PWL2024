@@ -11,25 +11,27 @@ class LandingController extends Controller
      */
     public function index()
     {
-        //
         return view('landing.index');
     }
 
     public function details()
     {
-        //
         return view('landing.details');
     }
 
     public function sertifikasi()
     {
-        //
         return view('landing.sertifikasi');
+    }
+
+    public function pengajuan()
+    {
+        return view('landing.pengajuan');
     }
 
     public function tentang()
     {
-        //
+        return view('landing.tentang');
     }
 
     /**

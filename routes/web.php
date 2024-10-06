@@ -27,4 +27,7 @@ use App\Http\Controllers\LandingController;
 Route::get('sertifikasi', [LandingController::class, 'sertifikasi'])->name('landing.sertifikasi');
 Route::get('details', [LandingController::class, 'details'])->name('landing.details');
 
+Route::get('pengajuan', [LandingController::class, 'pengajuan'])->name('landing.pengajuan');
+Route::get('tentang', [LandingController::class, 'tentang'])->name('landing.tentang');
+
 Route::resource('/', LandingController::class);
