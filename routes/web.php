@@ -24,10 +24,10 @@ use App\Http\Controllers\LandingController;
 
 
 //url lalu function
-Route::get('sertifikasi', [LandingController::class, 'sertifikasi'])->name('landing.sertifikasi');
+Route::get('halaman_dosen', [LandingController::class, 'halaman_dosen'])->name('landing.halaman_dosen');
 Route::get('details', [LandingController::class, 'details'])->name('landing.details');
 
-Route::get('pengajuan', [LandingController::class, 'pengajuan'])->name('landing.pengajuan');
-Route::get('tentang', [LandingController::class, 'tentang'])->name('landing.tentang');
+Route::get('d_sertifikasi', [LandingController::class, 'd_sertifikasi'])->name('landing.d_sertifikasi');
+Route::get('d_pelatihan', [LandingController::class, 'd_pelatihan'])->name('landing.d_pelatihan');
 
 Route::resource('/', LandingController::class);

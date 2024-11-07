@@ -245,3 +245,19 @@ transition: all 0.3s ease;
     border-radius: 5px;       /* Opsional: menambahkan border radius untuk tampilan yang lebih halus */
 }
 
+.footer-logo {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    align-items: center; /* Mengatur penataan vertikal agar logo dan teks sejajar */
+}
+
+.footer-text {
+    margin-left: 14px; /* Menambahkan jarak antara logo dan teks */
+    font-size: 20px; /* Menyesuaikan ukuran font sesuai kebutuhan */
+}
+
+
+.button-container {
+    display: flex;
+    gap: 20px; /* Jarak antar tombol */
+}
+

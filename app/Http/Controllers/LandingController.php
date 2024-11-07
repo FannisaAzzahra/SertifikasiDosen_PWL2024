@@ -19,19 +19,19 @@ class LandingController extends Controller
         return view('landing.details');
     }
 
-    public function sertifikasi()
+    public function halaman_dosen()
     {
-        return view('landing.sertifikasi');
+        return view('landing.halaman_dosen');
     }
 
-    public function pengajuan()
+    public function d_sertifikasi()
     {
-        return view('landing.pengajuan');
+        return view('landing.d_sertifikasi');
     }
 
-    public function tentang()
+    public function d_pelatihan()
     {
-        return view('landing.tentang');
+        return view('landing.d_pelatihan');
     }
 
     /**
