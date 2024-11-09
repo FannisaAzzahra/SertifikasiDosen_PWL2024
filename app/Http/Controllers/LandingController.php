@@ -14,25 +14,25 @@ class LandingController extends Controller
         return view('landing.index');
     }
 
-    public function details()
-    {
-        return view('landing.details');
-    }
+    // public function details()
+    // {
+    //     return view('landing.details');
+    // }
 
-    public function halaman_dosen()
-    {
-        return view('landing.halaman_dosen');
-    }
+    // public function halaman_dosen()
+    // {
+    //     return view('landing.halaman_dosen');
+    // }
 
-    public function d_sertifikasi()
-    {
-        return view('landing.d_sertifikasi');
-    }
+    // public function d_sertifikasi()
+    // {
+    //     return view('landing.d_sertifikasi');
+    // }
 
-    public function d_pelatihan()
-    {
-        return view('landing.d_pelatihan');
-    }
+    // public function d_pelatihan()
+    // {
+    //     return view('landing.d_pelatihan');
+    // }
 
     /**
      * Show the form for creating a new resource.
