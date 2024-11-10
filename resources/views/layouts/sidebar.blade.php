@@ -118,23 +118,31 @@
 
     <!-- Data Manage -->
     <li class="nav-header">Data Manage</li>
-    <li class="nav-item">
-      <a href="{{ url('/daftar_sertifikasi_pelatihan') }}" class="nav-link {{ ($activeMenu == 'daftar_sertifikasi_pelatihan') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-tasks"></i>
-        <p>Sertifikasi-Pelatihan</p>
+    <li class="nav-item has-treeview {{ in_array($activeMenu, ['daftar_sertifikasi_pelatihan', 'rekomendasi_dosen', 'periode_sertifikasi_dosen']) ? 'menu-open' : '' }}">
+      <a href="#" class="nav-link">
+        <i class="nav-icon fas fa-cogs"></i>
+        <p>Data Manage<i class="right fas fa-angle-left"></i></p>
       </a>
-    </li>
-    <li class="nav-item">
-      <a href="{{ url('/rekomendasi_dosen') }}" class="nav-link {{ ($activeMenu == 'rekomendasi_dosen') ? 'active' : '' }}">
-        <i class="fas fa-lightbulb nav-icon"></i>
-        <p>Rekomendasi Dosen</p>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a href="{{ url('/periode_sertifikasi_dosen') }}" class="nav-link {{ ($activeMenu == 'periode_sertifikasi_dosen') ? 'active' : '' }}">
-        <i class="fas fa-calendar-alt nav-icon"></i>
-        <p>Periode Sertifikasi Dosen</p>
-      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{{ url('/daftar_sertifikasi_pelatihan') }}" class="nav-link {{ ($activeMenu == 'daftar_sertifikasi_pelatihan') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Input Sertif-Pelatihan</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('/rekomendasi_dosen') }}" class="nav-link {{ ($activeMenu == 'rekomendasi_dosen') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Rekomendasi Dosen</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url('/periode_sertifikasi_dosen') }}" class="nav-link {{ ($activeMenu == 'periode_sertifikasi_dosen') ? 'active' : '' }}">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Periode Sertifikasi Dosen</p>
+          </a>
+        </li>
+      </ul>
     </li>
 
     <!-- Data Kompetensi Prodi -->
