@@ -124,6 +124,18 @@
         <p>Sertifikasi-Pelatihan</p>
       </a>
     </li>
+    <li class="nav-item">
+      <a href="{{ url('/rekomendasi_dosen') }}" class="nav-link {{ ($activeMenu == 'rekomendasi_dosen') ? 'active' : '' }}">
+        <i class="fas fa-lightbulb nav-icon"></i>
+        <p>Rekomendasi Dosen</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{{ url('/periode_sertifikasi_dosen') }}" class="nav-link {{ ($activeMenu == 'periode_sertifikasi_dosen') ? 'active' : '' }}">
+        <i class="fas fa-calendar-alt nav-icon"></i>
+        <p>Periode Sertifikasi Dosen</p>
+      </a>
+    </li>
 
     <!-- Data Kompetensi Prodi -->
     <li class="nav-header">Data Kompetensi Prodi</li>
